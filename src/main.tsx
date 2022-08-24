@@ -13,16 +13,18 @@ import TopNavbar from './Components/TopNavbar'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <TopNavbar/>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="about" element={<About/>}/>
-        <Route path="services" element={<Services/>}/>
-        <Route path="projects" element={<Projects/>}/>
-        <Route path="gallery" element={<Gallery/>}/>
-        <Route path="contact-us" element={<Contact/>}/>
-      </Routes>
-    </BrowserRouter>
+    <div className="container-fluid">
+      <TopNavbar/>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="about" element={<About/>}/>
+          <Route path="services" element={<Services/>}/>
+          <Route path="projects" element={<Projects/>}/>
+          <Route path="gallery" element={<Gallery/>}/>
+          <Route path="contact-us" element={<Contact/>}/>
+        </Routes>
+      </BrowserRouter>
+    </div>
   </React.StrictMode>
 )
