@@ -10,11 +10,14 @@ import Services from './Pages/Services'
 import 'bootstrap/dist/css/bootstrap.css';
 import './index.css'
 import TopNavbar from './Components/TopNavbar'
+import Footer from './Components/Footer'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <div className="container-fluid">
-      <TopNavbar/>
+      <div>
+        <TopNavbar/>
+      </div>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home/>}/>
@@ -25,6 +28,9 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
           <Route path="contact-us" element={<Contact/>}/>
         </Routes>
       </BrowserRouter>
+    </div>
+    <div>
+      <Footer/>
     </div>
   </React.StrictMode>
 )
