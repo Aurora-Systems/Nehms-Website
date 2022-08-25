@@ -3,7 +3,7 @@ import logo from "../assets/img/logoOne.png"
 
 const TopNavbar=()=>{
     return(
-            <Navbar collapseOnSelect expand="sm" fixed="top" bg="light">
+            <Navbar collapseOnSelect expand="sm"  bg="light">
                 <Container fluid>
                     <Navbar.Brand>
                         <img src={logo} width="100" alt="Nehms Construction"/>

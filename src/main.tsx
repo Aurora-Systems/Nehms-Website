@@ -14,7 +14,7 @@ import Footer from './Components/Footer'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <div className="container-fluid">
+    
       <div>
         <TopNavbar/>
       </div>
@@ -28,7 +28,6 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
           <Route path="contact-us" element={<Contact/>}/>
         </Routes>
       </BrowserRouter>
-    </div>
     <div>
       <Footer/>
     </div>
