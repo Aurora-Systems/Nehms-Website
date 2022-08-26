@@ -15,6 +15,8 @@ const Services=()=>{
                     <h1 className="animate-character display-1">SERVICES</h1>
                 </div>
             </div>
+            
+            <Container fluid>
             <div className={RowPage}>
                     <div className="col-sm">
                         <Carousel>
@@ -51,13 +53,12 @@ const Services=()=>{
                         </Carousel>
                         
                     </div>
-                    <div className="col-sm ">
+                    <div className="col-sm">
                         <h1 className="animate-character display-1">SNAPSHOT</h1>
                         <p><q><i>A world which sees art and construction as divided is not seeing the world as a whole</i></q></p>
                         <b>Sir Edmund Happold</b>
                     </div>
                 </div>
-            <Container fluid>
                 
                 <div className={RowPage}>
                     <div className="col-sm text-center">
