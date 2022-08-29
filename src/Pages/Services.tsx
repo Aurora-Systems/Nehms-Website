@@ -5,18 +5,22 @@ import secondImg from "../assets/img/serviceTwo.jpg";
 import thirdImg from "../assets/img/serviceThree.jpg";
 import fourthImg from "../assets/img/serviceFour.jpg";
 import fifthImg from "../assets/img/serviceFive.jpg";
+import { Fade } from "react-awesome-reveal";
 import { RowPage } from "../Components/Flex";
 
 const Services=()=>{
     return(
         <div>
-             <div className="page  d-flex flex-column align-items-center justify-content-center " style={divBg(bg)}>
-                <div className="bg-light p-5">
-                    <h1 className="animate-character display-1">SERVICES</h1>
+            <Fade direction="down">
+                <div className="page  d-flex flex-column align-items-center justify-content-center " style={divBg(bg)}>
+                    <div className="bg-light p-5">
+                        <h1 className="animate-character display-1">SERVICES</h1>
+                    </div>
                 </div>
-            </div>
+            </Fade>
             
             <Container fluid>
+            <Fade direction="down">
             <div className={RowPage}>
                     <div className="col-sm">
                         <Carousel>
@@ -59,7 +63,8 @@ const Services=()=>{
                         <b>Sir Edmund Happold</b>
                     </div>
                 </div>
-                
+                </Fade>
+                <Fade direction="down">
                 <div className={RowPage}>
                     <div className="col-sm text-center">
                         <h1 className="animate-character display-1">Civil Engineering</h1>
@@ -87,6 +92,7 @@ const Services=()=>{
 
                     </div>
                 </div>
+                </Fade>
             </Container>
         </div>
     )

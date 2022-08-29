@@ -13,6 +13,13 @@
 .page{
     height: 90vh;
 }
+.postImg{
+  box-shadow: var(--img-box-shadow-one);
+}
+
+.postImg:hover{
+  box-shadow: var(--img-box-shadow-two);
+}
 
 .imgBorder{
     box-shadow: var(--img-box-shadow-one);

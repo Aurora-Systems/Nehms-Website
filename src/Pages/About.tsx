@@ -5,18 +5,22 @@ import secondImg from "../assets/img/aboutTwo.jpg";
 import thirdImg from "../assets/img/aboutThree.jpg";
 import down from "../assets/img/down.png";
 import logo from "../assets/img/logoOne.png";
+import { Fade } from "react-awesome-reveal";
 import { Container } from "react-bootstrap";
 
 const About=()=>{
     const bg = divBg(firstImg);
     return(
         <div className="">
+            <Fade direction="down">
             <div className="page  d-flex flex-column align-items-center justify-content-center " style={bg}>
                 <div className="bg-light p-5">
                     <h1 className="animate-character display-1">ABOUT US</h1>
                 </div>
             </div>
+            </Fade>
             <Container fluid>
+            <Fade direction="down">
             <div className={RowPage}>
                 <div className="col-sm">
                     <img className="img-fluid" src={logo} alt=""/>
@@ -36,6 +40,8 @@ const About=()=>{
                     </a>
                 </div>
             </div>
+            </Fade>
+            <Fade direction="down">
             <div id="first" className={RowPage}>
                 <div className="col-sm">
                     <img className="img-fluid imgBorder" src={secondImg} alt="service station picture"/>
@@ -63,6 +69,8 @@ const About=()=>{
                     </a>
                 </div>
             </div>
+            </Fade>
+            <Fade direction="down">
             <div id="second" className={RowPage}>
                 <div className="col-sm">
                     <img className="img-fluid imgBorder" src={thirdImg} alt="picture of a construction site"/>
@@ -91,6 +99,8 @@ const About=()=>{
                     </a>
                 </div>
             </div>
+            </Fade>
+            <Fade direction="down">
             <div id="third" className={`${RowPage} text-center`}>
                 <div className="text-center">
                     <h1 className="display-1 animate-character">CORE VALUES</h1>
@@ -114,6 +124,7 @@ const About=()=>{
                     <h3 className=" animate-character">Creativity</h3>
                 </div>
             </div>
+            </Fade>
             </Container>
         </div>
     )
