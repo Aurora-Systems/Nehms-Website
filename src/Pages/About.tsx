@@ -1,15 +1,12 @@
 import { divBg } from "../Components/BackgroundStyle";
 import { RowPage } from "../Components/Flex";
-import firstImg from "../assets/img/aboutOne.jpg";
-import secondImg from "../assets/img/aboutTwo.jpg";
-import thirdImg from "../assets/img/aboutThree.jpg";
 import down from "../assets/img/down.png";
 import logo from "../assets/img/logoOne.png";
 import { Fade } from "react-awesome-reveal";
 import { Container } from "react-bootstrap";
 
 const About=()=>{
-    const bg = divBg(firstImg);
+    const bg = divBg("https://ardfacia.sirv.com/img/aboutOne.jpg");
     return(
         <div className="">
             <Fade direction="down">
@@ -44,7 +41,7 @@ const About=()=>{
             <Fade direction="down">
             <div id="first" className={RowPage}>
                 <div className="col-sm">
-                    <img className="img-fluid imgBorder" src={secondImg} alt="service station picture"/>
+                    <img className="img-fluid imgBorder" src="https://ardfacia.sirv.com/img/aboutTwo.jpg" alt="service station picture"/>
                 </div>
                 <div className="col-sm order-md-first">
                     <h1 className="display-1 animate-character">VISION</h1>
@@ -73,7 +70,7 @@ const About=()=>{
             <Fade direction="down">
             <div id="second" className={RowPage}>
                 <div className="col-sm">
-                    <img className="img-fluid imgBorder" src={thirdImg} alt="picture of a construction site"/>
+                    <img className="img-fluid imgBorder" src="https://ardfacia.sirv.com/img/aboutThree.jpg" alt="picture of a construction site"/>
                 </div>
                 <div className="col-sm">
                     <h1 className="display-1 animate-character">MISSION</h1>

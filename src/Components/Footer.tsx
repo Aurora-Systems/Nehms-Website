@@ -1,4 +1,3 @@
-import { RowPage } from "./Flex";
 import logo from "../assets/img/logoTwo.png"
 import facebook from "../assets/img/facebook.png"
 import linkedin from "../assets/img/linkedin.png"

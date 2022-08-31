@@ -1,10 +1,5 @@
 import { divBg } from "../Components/BackgroundStyle";
 import { Carousel, Container } from "react-bootstrap";
-import bg from "../assets/img/serviceOne.jpg";
-import secondImg from "../assets/img/serviceTwo.jpg";
-import thirdImg from "../assets/img/serviceThree.jpg";
-import fourthImg from "../assets/img/serviceFour.jpg";
-import fifthImg from "../assets/img/serviceFive.jpg";
 import { Fade } from "react-awesome-reveal";
 import { RowPage } from "../Components/Flex";
 
@@ -12,7 +7,7 @@ const Services=()=>{
     return(
         <div>
             <Fade direction="down">
-                <div className="page  d-flex flex-column align-items-center justify-content-center " style={divBg(bg)}>
+                <div className="page  d-flex flex-column align-items-center justify-content-center " style={divBg("https://ardfacia.sirv.com/img/serviceOne.jpg")}>
                     <div className="bg-light p-5">
                         <h1 className="animate-character display-1">SERVICES</h1>
                     </div>
@@ -25,31 +20,31 @@ const Services=()=>{
                     <div className="col-sm">
                         <Carousel>
                         <Carousel.Item>
-                                <img src={thirdImg} className="d-block w-100"/>
+                                <img src="https://ardfacia.sirv.com/img/serviceThree.jpg" className="d-block w-100"/>
                                 <Carousel.Caption>
                                     <h1>Roadworks</h1>
                                 </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <img src={bg} className="d-block w-100 imgBorder"/>
+                                <img src="https://ardfacia.sirv.com/img/serviceOne.jpg" className="d-block w-100 imgBorder"/>
                                 <Carousel.Caption>
                                     <h1>Building Construction</h1>
                                 </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <img src={fifthImg} className="d-block w-100"/>
+                                <img src="https://ardfacia.sirv.com/img/serviceFive.jpg" className="d-block w-100"/>
                                 <Carousel.Caption>
                                     <h1>Paving</h1>
                                 </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <img src={secondImg} className="d-block w-100"/>
+                                <img src="https://ardfacia.sirv.com/img/serviceTwo.jpg" className="d-block w-100"/>
                                 <Carousel.Caption>
                                     <h1>Stone Work</h1>
                                 </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
-                                <img src={fourthImg} className="d-block w-100"/>
+                                <img src="https://ardfacia.sirv.com/img/serviceFour.jpg" className="d-block w-100"/>
                                 <Carousel.Caption>
                                     <h1>Stormwater Drains</h1>
                                 </Carousel.Caption>

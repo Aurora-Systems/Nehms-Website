@@ -1,45 +1,65 @@
 import { RowPage } from "../Components/Flex";
-import { useState, useEffect } from "react";
 import { Carousel, Container } from "react-bootstrap";
-import firstImg from "../assets/img/homeImg.jpg";
-import secondImg from "../assets/img/homeTwoImg.jpg";
-import thirdImg from "../assets/img/homeThreeImg.jpg";
-import fourthImg from "../assets/img/homeFourImg.jpg";
 import logo from "../assets/img/logoTwo.png";
-import home from "../assets/img/home.jpg";
-import down from "../assets/img/down.png";
 import { Fade } from "react-awesome-reveal";
-import { divBg } from "../Components/BackgroundStyle";
 
 const Home = () => {
-    const [slide,setSlide] = useState<string>(home);
-    const [currentSlide, setCurrentSlide] = useState<number>(0);
-    const slider =[home,firstImg,secondImg,thirdImg]
-    const slideImg=()=>{
-        if(currentSlide == 0 || currentSlide < 5){
-            console.log(currentSlide+1)
-            setCurrentSlide(currentSlide+1)
-        }else if(currentSlide == 5){
-            setCurrentSlide(0)
-        }
-    }
-
-//    setInterval(slideImg, 5000)
     
+
     return (
         <div className=" m-0" >
             <Fade direction="down">
+                <Carousel fade >
+                    <Carousel.Item>
+                        <img 
+                            src="https://ardfacia.sirv.com/img/homeTwoImg.jpg"
+                            className="d-block w-100" 
+                            alt=""
+                        />
+                        <Carousel.Caption className="">
+                            <img src={logo} className="img-fluid w-100"/>
+                            
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img 
+                            src="https://ardfacia.sirv.com/img/homeThreeImg.jpg"
+                            className="d-block w-100" 
+                            alt=""
+                        />
+                        <Carousel.Caption>
+                            <h1 className="">
+                                <img src={logo} className="img-fluid w-100"/>
+                            </h1>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img 
+                            src="https://ardfacia.sirv.com/img/homeFourImg.jpg"
+                            className="d-block w-100" 
+                            alt=""
+                        />
+                        <Carousel.Caption >
+                            <h1 className="">
+                                <img src={logo} className="img-fluid w-100"/>
+                            </h1>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img 
+                            src="https://ardfacia.sirv.com/img/home.jpg"
+                            className="d-block w-100" 
+                            alt=""
+                        />
+                        <Carousel.Caption>
+                            <h1 className="">
+                                <img src={logo} className="img-fluid w-100"/>
+                            </h1>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                </Carousel>
                 
-                <div className="page d-flex flex-column align-items-center justify-content-center" style={divBg(slider[currentSlide])}>
-                <div className="text-center">
-                    <img src={logo}  className="img-fluid w-50" />
-                </div>
-                <div className="text-center">
-                    <a href="#second">
-                        <img src={down} alt="scroll down" />
-                    </a>
-                </div>
-            </div>
+                
             </Fade> 
             <Container fluid>
             <Fade direction="down"><div id="second" className={RowPage}>
@@ -55,11 +75,11 @@ const Home = () => {
                     <strong>Emmanuel T Nemhara</strong>
                 </div>
                 <div className="col-sm">
-                    <img className="img-fluid imgBorder" src={secondImg} alt="" />
+                    <img className="img-fluid imgBorder" src="https://ardfacia.sirv.com/img/homeTwoImg.jpg" alt="" />
                 </div>
                 <div className="text-center">
                     <a href="#third" className="pointer">
-                        <img src={down} alt="scroll down" />
+                        <img src="https://ardfacia.sirv.com/img/down.png" alt="scroll down" />
                     </a>
                 </div>
             </div></Fade>
@@ -69,11 +89,11 @@ const Home = () => {
                     <h1 className="display-1 animate-character">CONCEPTUALIZE DESIGN IMPLEMENT </h1>
                 </div>
                 <div className="col-sm order-md-first">
-                    <img className="img-fluid imgBorder" src={thirdImg} alt="" />
+                    <img className="img-fluid imgBorder" src="https://ardfacia.sirv.com/img/homeThreeImg.jpg" alt="" />
                 </div>
                 <div className="text-center">
                     <a href="#fourth" className="pointer">
-                        <img src={down} alt="scroll down" />
+                        <img src="https://ardfacia.sirv.com/img/down.png" alt="scroll down" />
                     </a>
                 </div>
             </div></Fade>
@@ -90,7 +110,7 @@ const Home = () => {
                     <b>David Allan Coe</b>
                 </div>
                 <div className="col-sm ">
-                    <img className="img-fluid imgBorder" src={fourthImg} alt="" />
+                    <img className="img-fluid imgBorder" src="https://ardfacia.sirv.com/img/homeFourImg.jpg" alt="" />
                 </div>
             </div>
             </Fade>
@@ -101,3 +121,4 @@ const Home = () => {
 }
 
 export default Home;
+

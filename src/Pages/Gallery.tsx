@@ -13,7 +13,7 @@ const Gallery = () => {
                     <iframe className="embed-responsive-item w-100 h-100  imgBorder" src="https://www.youtube.com/embed/4SKUHTHcNZk" title="Boundary wall and Paving"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen/>
                 </div>
                 <Container>
-                    <div className="powr-instagram-feed" id="9b6ce8fe_1661779010"></div>
+                <div className="powr-social-feed" id="b31e775a_1661952268"></div>
                 </Container>
             </Fade>
         </div>
